@@ -1,9 +1,207 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Coursera!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hungrill</title>
+	<style>
+		body {
+			font-size: 16px;
+			font-family: 'Oxygen', sans-serif;
+			background-color: #61122f;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		.img-div {
+            background-color: #f6b319;
+            border: black 2px solid;
+			margin: 0px;
+			padding: 15px;
+			position: relative;
+			height: 235px;
+		}
+
+		#header-img {
+			height: 200px;
+			width: 250px;
+			border-color: black solid;
+			border-width: 5px;
+			padding: 0px 15px 0px 0px;
+			float: left;
+
+		}
+
+		#title-info {
+			float: left;
+			font-size: 20px;
+		}
+	
+		h1 {
+            color: #fff;
+            font-family: 'Oxygen', sans-serif;
+            background-color: #61122f;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            border: 0px;
+            font-size: 35px;
+		}
+
+		#contact {
+			text-decoration: none;
+		}
+
+		.header-div {
+			border: white solid 2px;
+			margin: 0px 0px 10px 0px;
+		}
+		.contact-div {
+			border: white solid 2px;
+			width: 260px;
+			background-color: #61122f;
+		}
+
+		.container{
+			margin-bottom: 15px;
+		}
+
+		#imgdiv{
+			border: white solid 2px;
+			height: 204px;
+			width: 239px;
+			float: left;
+			margin-right: 15px
+		}
+		
+		.contact-p{
+			padding: 0px;
+			margin: 0px;
+			height: 22px;
+			width: 250px;
+			margin-right: auto;
+			margin-left: auto;
+			color: #fff;
+			background-color: #61122f;
+			border: 0px;
+		}
+
+		a{
+			color: #fff;
+		}
+
+		@media (min-width: 992px) {
+			.lg-3{
+				float: left;
+				border: black 2px;
+				width: 33.3%;
+			}
+		}
+
+		@media (min-width: 768px) and (max-width: 991px) {
+			.md-2{
+				float: left;
+				border: black 2px;
+				width: 50%;
+			}
+
+			.d3{
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 767px){
+		    .lg-3, .md-2{
+				float: left;
+				border: black 2px;
+				width: 100%;
+			}
+
+			.img-div {
+				height: 335px;
+			}
+
+			.header-div {
+				margin-top: 15px;
+			}
+		}
+
+		.lg-3, .md-2 {
+			position: relative;
+			border: black solid 2px;
+			height: 200px;
+			background-color: #FFE0F0;
+		}
+
+		p{
+			border: 2px solid white;
+			background-color: #BCADFF;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+		}
+
+		.p1, .p2, .p3 {
+			float: right;
+			height: 25px;
+			width: 80px;
+			margin: 0px;
+			text-align: center;
+			padding:5px;
+			box-sizing: content-box;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		#menu {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		
+
+
+</style>
+
 </head>
 <body>
-<h1>Hello Coursera! It's a great course!</h1>
+<div class="container">
+	<div class="img-div">
+			<div id="imgdiv"><img id="header-img" src="https://images.pexels.com/photos/317449/pexels-photo-317449.jpeg?cs=srgb&dl=food-luxury-party-red-wine-317449.jpg&fm=jpg" title="logo image" no-repeat></div>
+			<div id="title-info">
+				<div class="header-div"><h1> Hungrill Fine Dining </h1></div>
+                <div class="contact-div"><p class="contact-p">Contact: <a id="contact" href="index.html" title="contact number will be here">+## ##########</a></p></div>
+		   </div>
+   </div>
+</div>   
+
+<h1 id="menu">Our menu</h1>
+
+<div class="row">
+	<div class="lg-3 md-2">
+		<p class="p1">chicken</p>
+        <ul>
+        	<li>Dish1</li>
+        	<li>Dish2</li>
+        	<li>Dish3</li>
+        </ul>	
+	</div>
+	<div class="lg-3 md-2">
+		<p class="p2">beef</p>
+		<ul>
+        	<li>Dish1</li>
+        	<li>Dish2</li>
+        	<li>Dish3</li>
+        </ul>
+	</div>
+	<div class="lg-3 md-2 d3">
+		<p class="p3">sushi</p>
+		<ul>
+        	<li>Dish1</li>
+        	<li>Dish2</li>
+        	<li>Dish3</li>
+        </ul>
+	</div>
+</div>
 </body>
 </html>
